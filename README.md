@@ -1,5 +1,5 @@
 # nextBus
-##Problem Statement
+## Problem Statement
 Program to tell you how long it is until the next bus on “BUS ROUTE” leaving from “BUS STOP NAME” going “DIRECTION” using the api defined at http://svc.metrotransit.org/
 
 “BUS ROUTE” will be a substring of the bus route name which is only in one bus route
@@ -14,6 +14,8 @@ $ node nextBus.js “Express - Target - Hwy 252 and 73rd Av P&R - Mpls” “Tar
 2 Minutes
 ```
 (note that that won’t return anything if the last bus for the day has already left)
+
+
 Or if you wanted to take the light rail from downtown to the Mall of America or the Airport:
 
 ```
@@ -22,7 +24,7 @@ $ node nextBus.js “METRO Blue Line” “Target Field Station Platform 1” �
 ```
 
 
-##Setup
+## Setup
 1. Clone the repository to your local
 ```
 mkdir nextBus
@@ -36,11 +38,13 @@ npm install
 ```
 
 
-##Usage
+## Usage
 ```
 node nextBus.js {BusRoute} {BusStopName} {Direction}
 
 node nextBus.js "18 - Nicollet Av -Grand Av - South Bloomington" "South Bloomington Transit Center" "NORTHBOUND"
 ```
 
+## Todo
+Directions, Routes and Stops API's response can be cached in Memcache/Redis with the key of queryArguments,Date
  

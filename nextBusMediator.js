@@ -38,6 +38,7 @@ class nextBusMediator {
                 throw new Error('NO_BUS_FOUND');
             }
 
+
             //compute duration
             const nextBus = nextBuses[0];
             if(nextBus.Actual) {
@@ -50,6 +51,8 @@ class nextBusMediator {
 
                 return dateOperations.getDuration(nextBus.DepartureTime);
             }
+
+
         }
         catch(error) {
             console.log(error);

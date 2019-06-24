@@ -19,7 +19,7 @@ class directions {
 
             //if direction not found
             if(typeof findDirection == "undefined") {
-                throw new Error('Route not found. Please try again.')
+                throw new Error('DIRECTION_NOT_FOUND')
             }
 
 

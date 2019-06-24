@@ -18,7 +18,7 @@ class routes {
 
             //if not found
             if(typeof findRoute == "undefined") {
-                throw new Error('Route not found. Please try again.')
+                throw new Error('ROUTE_NOT_FOUND')
             }
 
 

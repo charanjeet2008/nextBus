@@ -20,7 +20,7 @@ class stops {
 
             //if match not found
             if(typeof findStop == "undefined") {
-                throw new Error('Stop not found. Please try again.')
+                throw new Error('STOP_NOT_FOUND')
             }
 
 
